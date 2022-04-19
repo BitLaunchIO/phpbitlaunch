@@ -1,0 +1,32 @@
+{
+    "name": "bitlaunch/phpbitlaunch",
+    "description": "PHPBitLaunch is a PHP client library for accessing the BitLaunch API.",
+    "keywords": [
+        "framework",
+        "http",
+        "rest",
+        "web service",
+        "curl",
+        "client",
+        "HTTP client",
+        "BitLaunch"
+    ],
+    "require": {
+        "php": "^7.2.5 || ^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "require-dev": {
+        "php": "^7.2.5 || ^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PHPBitLaunch\\": "src/"
+        }
+    }
+}
