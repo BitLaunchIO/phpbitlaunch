@@ -1,3 +1,5 @@
+[[_TOC_]]
+
 # PHPBitLaunch
 
 PHPBitLaunch is a PHP client library for accessing the BitLaunch API.
@@ -7,7 +9,7 @@ You can view BitLaunch API docs here: https://developers.bitlaunch.io/
 ## Install
 
 ```sh
-composer require "bitlaunch/phpbitlaunch"
+composer require "bitlaunchio/phpbitlaunch"
 ```
 
 ## Usage

@@ -16,6 +16,6 @@ class CreateOptions extends AbstractService
      */
     public function show(int $hostID): Types\CreateOptions
     {
-        return new Types\CreateOptions($this->doGet('hosts-create-options' . $hostID));
+        return new Types\CreateOptions($this->doGet('hosts-create-options/' . $hostID));
     }
 }

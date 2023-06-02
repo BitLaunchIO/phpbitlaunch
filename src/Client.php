@@ -12,7 +12,7 @@ class Client
 {
     protected const BASE_URI = 'https://app.bitlaunch.io/api/';
 
-    protected const VERSION = '1.0.0';
+    protected const VERSION = '1.0.1';
     
     protected const USER_AGENT = 'phpbitlaunch/' . self::VERSION;
 

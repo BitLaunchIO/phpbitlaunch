@@ -31,11 +31,11 @@ abstract class AbstractService extends Client
      * @param string $endpoint BitLaunch API endpoint
      * @param array $params URL Querey parameters
      * 
-     * @return \stdClass JSON decoded response
+     * @return \stdClass|\stdClass[] JSON decoded response
      */
-    protected function doGet(string $endpoint, array $params = []): \stdClass
+    protected function doGet(string $endpoint, array $params = []): \stdClass|array
     {
-        return json_decode($this->doRequest('GET', $endpoint, $params)) ?? new \stdClass();
+        return json_decode($this->doRequest('GET', $endpoint, $params)) ?? new \stdClass() ?? new \array;
     }
 
     /**
@@ -43,22 +43,22 @@ abstract class AbstractService extends Client
      * @param array $params URL Querey parameters
      * @param array $data Request Body
      * 
-     * @return \stdClass JSON decoded response
+     * @return \stdClass|\stdClass[] JSON decoded response
      */
-    protected function doPost(string $endpoint, array $params = [], array $data = []): \stdClass
+    protected function doPost(string $endpoint, array $params = [], array $data = []): \stdClass|array
     {
-        return json_decode($this->doRequest('POST', $endpoint, $params, $data)) ?? new \stdClass();
+        return json_decode($this->doRequest('POST', $endpoint, $params, $data)) ?? new \stdClass() ?? new \array;
     }
 
     /**
      * @param string $endpoint BitLaunch API endpoint
      * @param array $params URL Querey parameters
      * 
-     * @return \stdClass JSON decoded response
+     * @return \stdClass|\stdClass[] JSON decoded response
      */
-    protected function doDelete(string $endpoint, array $params = []): \stdClass
+    protected function doDelete(string $endpoint, array $params = []): \stdClass|array
     {
-        return json_decode($this->doRequest('DELETE', $endpoint, $params)) ?? new \stdClass();
+        return json_decode($this->doRequest('DELETE', $endpoint, $params)) ?? new \stdClass() ?? new \array;
     }
 
     /**
