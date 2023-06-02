@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # PHPBitLaunch
 
 PHPBitLaunch is a PHP client library for accessing the BitLaunch API.
